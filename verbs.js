@@ -52,7 +52,7 @@ var listOfVerbs = [
 
 function insertHeaderCell(row, name) {
 	var cell = row.insertCell();
-	cell.appendChild(document.createTextNode(name));
+	cell.outerHTML = "<th>" + name + "</th>";
 }
 
 function addListofVerbsTableHeader(table) {
