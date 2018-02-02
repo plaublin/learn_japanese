@@ -128,22 +128,22 @@ function startQuizz() {
 	var table = document.getElementById('verbstable');
 
 	var difficulty; // 0: easy, 1: medium, 2: hard
-	if(document.getElementById('quizzeasy').checked) {
+	if(document.getElementById('quizeasy').checked) {
 		difficulty = 0;
-	} else if(document.getElementById('quizzmedium').checked) {
+	} else if(document.getElementById('quizmedium').checked) {
 		difficulty = 1;
-	} else if(document.getElementById('quizzhard').checked) {
+	} else if(document.getElementById('quizhard').checked) {
 		difficulty = 2;
 	} else {
-		console.log("Something went really wrong with the radio buttons for the quizz difficulty...");
-		document.write("Something went really wrong with the radio buttons for the quizz difficulty...");
+		console.log("Something went really wrong with the radio buttons for the quiz difficulty...");
+		document.write("Something went really wrong with the radio buttons for the quiz difficulty...");
 		return;
 	}
 
 	emptyListOfVerbs(table);
 	addListofVerbsTableHeader(table);
 
-	var nVerbs = document.getElementById("quizzlength").value; 
+	var nVerbs = document.getElementById("quizlength").value; 
 	if (nVerbs <= 0 || nVerbs > listOfVerbs.length) {
 		nVerbs = listOfVerbs.length;
 	}
@@ -197,5 +197,5 @@ function startQuizz() {
 }
 
 function initScript() {
-	document.getElementById("quizzlength").defaultValue = listOfVerbs.length; 
+	document.getElementById("quizlength").defaultValue = listOfVerbs.length; 
 }
