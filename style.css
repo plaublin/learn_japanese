@@ -1,1 +1,5 @@
 /* style.css */
+
+table, th {
+	border: 1px solid gray
+}
