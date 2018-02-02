@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Japanese verbs</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="https://unpkg.com/wanakana"></script>
+		<script src="verbs.js"></script> 
+	</head>
+
+	<body onLoad="initScript()">
+		<h1>日本動詞を習いましょう！</h1>
+
+		<button onclick="displayListOfVerbs()">List of verbs</button>
+
+		<button onclick="startQuizz()">Quizz</button> 
+		<label for="quizzlength" id="quizzlengthlabel">Number of verbs: <input type="text" id="quizzlength" maxlength="4" size="4"></label>
+		<label>Difficulty: </label>
+		<input type="radio" id="quizzeasy" name="quizzdifficulty" value="easy"> <label for="quizzeasy">Easy</label> 
+		<input type="radio" id="quizzmedium" name="quizzdifficulty" value="medium" checked> <label for="quizzmedium">Medium</label> 
+		<input type="radio" id="quizzhard" name="quizzdifficulty" value="hard"> <label for="quizzhard">Hard</label> 
+
+		<table border="1" id="verbstable">
+		</table>
+		<button onclick="checkQuizz()" style="display: none;">Quizz</button> 
+	</body>
+</html>
