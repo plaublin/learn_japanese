@@ -111,7 +111,7 @@ function getNewIndex(listIdxVerbs) {
 	}
 }
 
-function displayElementForQuizz(difficulty, nDisplayed) {
+function displayElementForQuiz(difficulty, nDisplayed) {
 	var display = getRandomInt(2); // display == 0: don't display; 1: display
 	if (display == 1) {
 		if (difficulty == 0 || (difficulty == 1 && nDisplayed < 2) || (difficulty == 2 && nDisplayed < 1)) {
@@ -124,7 +124,7 @@ function displayElementForQuizz(difficulty, nDisplayed) {
 }
 
 
-function startQuizz() {
+function startQuiz() {
 	var table = document.getElementById('verbstable');
 
 	var difficulty; // 0: easy, 1: medium, 2: hard
@@ -168,7 +168,7 @@ function startQuizz() {
 			if (j == verb.length-1 && ((groupDisplayed && nDisplayed == 1) || nDisplayed == 0)) {
 				cellContent = verb[j];
 			} else {
-				if (displayElementForQuizz(difficulty, nDisplayed)) {
+				if (displayElementForQuiz(difficulty, nDisplayed)) {
 					if (j == 1) {
 						cellContent = verb[j];
 						groupDisplayed = true;
