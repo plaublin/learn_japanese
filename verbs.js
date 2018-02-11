@@ -1,6 +1,6 @@
 var listOfVerbs = [
 	// meaning, group, masu, te, dict, nai, ta, kanji
-	['arrive', 1, 'tsukimasu', 'tsuitte', 'tsuku', 'tsukanai', 'tsuuitta', '着きます'],
+	['arrive', 1, 'tsukimasu', 'tsuite', 'tsuku', 'tsukanai', 'tsuita', '着きます'],
 	['borrow', 2, 'karimasu', 'karite', 'kariru', 'karinai', 'karita', '借ります'],
 	['buy', 1, 'kaimasu', 'katte', 'kau', 'kawanai', 'katta', '買います'],
 	['call', 2, 'kakemasu', 'kakete', 'kakeru', 'kakenai', 'kaketa', ''],
@@ -12,8 +12,8 @@ var listOfVerbs = [
 	['drink', 1, 'nomimasu', 'nonde', 'nomu', 'nomanai', 'nonda', '飲みます'],
 	['eat', 2, 'tabemasu', 'tabete', 'taberu', 'tabenai', 'tabeta', '食べます'],
 	['enter', 1, 'hairimasu', 'haitte', 'hairu', 'hairanai', 'haitta', '入ります'],
-	['exist (object)', 1, 'arimasu', 'atte', 'aru', 'aranai', 'atta', ''],
-	['exist (people)', 2, 'imasu', 'itte', 'iru', 'nai', 'itta', ''],
+	['exist (object)', 1, 'arimasu', 'atte', 'aru', 'nai', 'atta', ''],
+	['exist (people)', 2, 'imasu', 'ite', 'iru', 'inai', 'itta', ''],
 	['finish', 1, 'owarimasu', 'owatte', 'owaru', 'owaranai', 'owatta', '終わります'],
 	['get off', 2, 'orimasu', 'orite', 'oriru', 'orinai', 'orita', '降ります'],
 	['get on', 1, 'norimasu', 'notte', 'noru', 'noranai', 'notta', '乗ります'],
@@ -30,8 +30,10 @@ var listOfVerbs = [
 	['put (things)', '1', 'okimasu', 'oite', 'oku', 'okanai', 'oita', '置きます'],
 	['read', '1', 'yomimasu', 'yonde', 'yomu', 'yomanai', 'yonda', '読みます'],
 	['receive', '1', 'moraimasu', 'moratte', 'morau', 'morawanai', 'moratta', '貰います'],
+	['rest', '1', 'yasumimasu', 'yasunde', 'yasumu', 'yasumanai', 'yasunda', '休mimasu'],
 	['see', '2', 'mimasu', 'mite', 'miru', 'minai', 'mita', '見ます'],
 	['send', '1', 'okurimasu', 'okutte', 'okuru', 'okuranai', 'okutta', '送ります'],
+	['sing', '1', 'utarimasu', 'utatte', 'utau', 'utaranai', 'utatta', '歌rimasu'],
 	['sleep', '2', 'nemasu', 'nete', 'neru', 'nenai', 'neta', '寝ます'],
 	['understand', '1', 'wakarimasu', 'wakatte', 'wakaru', 'wakaranai', 'wakatta', '分かります'],
 	['speak', '2', 'hanashimasu', 'hanashite', 'hanasu', 'hanasanai', 'hanashita', '話します'],
@@ -42,11 +44,12 @@ var listOfVerbs = [
 	['switch on', '2', 'tsukemasu', 'tsukete', 'tsukeru', 'tsukenai', 'tsuketa', '点けます'],
 	['take', '1', 'torimasu', 'totte', 'toru', 'toranai', 'totta', '取ります'],
 	['teach', '2', 'oshiemasu', 'oshiete', 'oshieru', 'oshienai', 'oshieta', '教えます'],
-	['turn', '1', 'mogarimasu', 'mogatte', 'mogaru', 'mogaranai', 'mogatta', '曲がります'],
+	['turn', '1', 'magarimasu', 'magatte', 'magaru', 'magaranai', 'magatta', '曲がります'],
 	['wait', '1', 'machimasu', 'matte', 'matsu', 'matanai', 'matta', '待ちます'],
 	['wake up', '2', 'okimasu', 'okite', 'okiru', 'okinai', 'okita', '起きます'],
 	['walk', '1', 'arukimasu', 'aruite', 'aruku', 'arukanai', 'aruita', '歩きます'],
 	['wear', '2', 'kimasu', 'kite', 'kiru', 'kinai', 'kita', '着ます'],
+	['work', '1', 'hatarakimasu', 'hataraite', 'hataraku', 'hatarakanai', 'hataraita', '働kimasu'],
 	['write', '1', 'kakimasu', 'kaite', 'kaku', 'kakanai', 'kaita', '書きます'],
 ];
 
