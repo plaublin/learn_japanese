@@ -1,22 +1,22 @@
 var listOfVerbs = [
 	// meaning, group, masu, te, dict, nai, ta, kanji
-	['arrive', 1, 'tsukimasu', 'tsuite', 'tsuku', 'tsukanai', 'tsuita', '着きます'],
-	['borrow', 2, 'karimasu', 'karite', 'kariru', 'karinai', 'karita', '借ります'],
-	['buy', 1, 'kaimasu', 'katte', 'kau', 'kawanai', 'katta', '買います'],
-	['call', 2, 'kakemasu', 'kakete', 'kakeru', 'kakenai', 'kaketa', ''],
-	['close', 2, 'shimemasu', 'shimete', 'shimeru', 'shimenai', 'shimeta', '閉めます'],
-	['come', 3, 'kimasu', 'kite', 'kuru', 'konai', 'kita', '来ます'],
-	['cut', 1, 'kirimasu', 'kitte', 'kiru', 'kiranai', 'kitta', '切ります'],
-	['deliver', 2, 'todokemasu', 'todokete', 'todokeru', 'todokenai', 'todoketa', '届けます'],
-	['do', 3, 'shimasu', 'shite', 'suru', 'shinai', 'shita', ''],
-	['drink', 1, 'nomimasu', 'nonde', 'nomu', 'nomanai', 'nonda', '飲みます'],
-	['eat', 2, 'tabemasu', 'tabete', 'taberu', 'tabenai', 'tabeta', '食べます'],
-	['enter', 1, 'hairimasu', 'haitte', 'hairu', 'hairanai', 'haitta', '入ります'],
-	['exist (object)', 1, 'arimasu', 'atte', 'aru', 'nai', 'atta', ''],
-	['exist (people)', 2, 'imasu', 'ite', 'iru', 'inai', 'itta', ''],
-	['finish', 1, 'owarimasu', 'owatte', 'owaru', 'owaranai', 'owatta', '終わります'],
-	['get off', 2, 'orimasu', 'orite', 'oriru', 'orinai', 'orita', '降ります'],
-	['get on', 1, 'norimasu', 'notte', 'noru', 'noranai', 'notta', '乗ります'],
+	['arrive', '1', 'tsukimasu', 'tsuite', 'tsuku', 'tsukanai', 'tsuita', '着きます'],
+	['borrow', '2', 'karimasu', 'karite', 'kariru', 'karinai', 'karita', '借ります'],
+	['buy', '1', 'kaimasu', 'katte', 'kau', 'kawanai', 'katta', '買います'],
+	['call', '2', 'kakemasu', 'kakete', 'kakeru', 'kakenai', 'kaketa', ''],
+	['close', '2', 'shimemasu', 'shimete', 'shimeru', 'shimenai', 'shimeta', '閉めます'],
+	['come', '3', 'kimasu', 'kite', 'kuru', 'konai', 'kita', '来ます'],
+	['cut', '1', 'kirimasu', 'kitte', 'kiru', 'kiranai', 'kitta', '切ります'],
+	['deliver', '2', 'todokemasu', 'todokete', 'todokeru', 'todokenai', 'todoketa', '届けます'],
+	['do', '3', 'shimasu', 'shite', 'suru', 'shinai', 'shita', ''],
+	['drink', '1', 'nomimasu', 'nonde', 'nomu', 'nomanai', 'nonda', '飲みます'],
+	['eat', '2', 'tabemasu', 'tabete', 'taberu', 'tabenai', 'tabeta', '食べます'],
+	['enter', '1', 'hairimasu', 'haitte', 'hairu', 'hairanai', 'haitta', '入ります'],
+	['exist (object)', '1', 'arimasu', 'atte', 'aru', 'nai', 'atta', ''],
+	['exist (people)', '2', 'imasu', 'ite', 'iru', 'inai', 'itta', ''],
+	['finish', '1', 'owarimasu', 'owatte', 'owaru', 'owaranai', 'owatta', '終わります'],
+	['get off', '2', 'orimasu', 'orite', 'oriru', 'orinai', 'orita', '降ります'],
+	['get on', '1', 'norimasu', 'notte', 'noru', 'noranai', 'notta', '乗ります'],
 	['give', '2', 'agemasu', 'agete', 'ageru', 'agenai', 'ageta', ''],
 	['go ', '1', 'ikimasu', 'itte', 'iku', 'ikanai', 'itta', '行きます'],
 	['go out', '2', 'demasu', 'dete', 'deru', 'denai', 'deta', '出ます'],
@@ -30,10 +30,10 @@ var listOfVerbs = [
 	['put (things)', '1', 'okimasu', 'oite', 'oku', 'okanai', 'oita', '置きます'],
 	['read', '1', 'yomimasu', 'yonde', 'yomu', 'yomanai', 'yonda', '読みます'],
 	['receive', '1', 'moraimasu', 'moratte', 'morau', 'morawanai', 'moratta', '貰います'],
-	['rest', '1', 'yasumimasu', 'yasunde', 'yasumu', 'yasumanai', 'yasunda', '休mimasu'],
+	['rest', '1', 'yasumimasu', 'yasunde', 'yasumu', 'yasumanai', 'yasunda', '休みます'],
 	['see', '2', 'mimasu', 'mite', 'miru', 'minai', 'mita', '見ます'],
 	['send', '1', 'okurimasu', 'okutte', 'okuru', 'okuranai', 'okutta', '送ります'],
-	['sing', '1', 'utarimasu', 'utatte', 'utau', 'utaranai', 'utatta', '歌rimasu'],
+	['sing', '1', 'utarimasu', 'utatte', 'utau', 'utaranai', 'utatta', '歌ります'],
 	['sleep', '2', 'nemasu', 'nete', 'neru', 'nenai', 'neta', '寝ます'],
 	['understand', '1', 'wakarimasu', 'wakatte', 'wakaru', 'wakaranai', 'wakatta', '分かります'],
 	['speak', '2', 'hanashimasu', 'hanashite', 'hanasu', 'hanasanai', 'hanashita', '話します'],
@@ -49,9 +49,12 @@ var listOfVerbs = [
 	['wake up', '2', 'okimasu', 'okite', 'okiru', 'okinai', 'okita', '起きます'],
 	['walk', '1', 'arukimasu', 'aruite', 'aruku', 'arukanai', 'aruita', '歩きます'],
 	['wear', '2', 'kimasu', 'kite', 'kiru', 'kinai', 'kita', '着ます'],
-	['work', '1', 'hatarakimasu', 'hataraite', 'hataraku', 'hatarakanai', 'hataraita', '働kimasu'],
+	['work', '1', 'hatarakimasu', 'hataraite', 'hataraku', 'hatarakanai', 'hataraita', '働きます'],
 	['write', '1', 'kakimasu', 'kaite', 'kaku', 'kakanai', 'kaita', '書きます'],
 ];
+
+// this array contains the indexes of verbs used in the quiz
+var listIdxVerbs = [];
 
 function insertHeaderCell(row, name) {
 	var cell = row.insertCell();
@@ -79,6 +82,8 @@ function emptyListOfVerbs(table) {
 function displayListOfVerbs() {
 	var table = document.getElementById('verbstable');
 	
+	document.getElementById('validateQuiz').style.visibility = 'hidden';
+	document.getElementById('quizscore').innerHTML = '';
 	emptyListOfVerbs(table);
 	addListofVerbsTableHeader(table);
 
@@ -143,6 +148,8 @@ function startQuiz() {
 		return;
 	}
 
+	document.getElementById('validateQuiz').style.visibility = 'visible';
+	document.getElementById('quizscore').innerHTML = '';
 	emptyListOfVerbs(table);
 	addListofVerbsTableHeader(table);
 
@@ -152,7 +159,7 @@ function startQuiz() {
 	}
 
 	var tbody = table.createTBody();
-	var listIdxVerbs = [];
+	listIdxVerbs = [];
 	for (var i=0; i<nVerbs; i++) {
 		var tr = tbody.insertRow();
 
@@ -189,14 +196,72 @@ function startQuiz() {
 				node.setAttribute('type', 'text');
 
 				var len = verb[j].length;
-				node.setAttribute('maxlength', len);
-				node.setAttribute('length', len);
+				node.setAttribute('maxlength', len*2);
+				node.setAttribute('length', len*2);
 			} else {
 				node = document.createTextNode(cellContent);
 			}
 			td.appendChild(node);
 		}
 	}
+}
+
+function validateQuiz() {
+	var table = document.getElementById('verbstable');
+
+	var nVerbs = listIdxVerbs.length;
+	var score = 0;
+
+	for (var i=0; i<nVerbs; i++) {
+		var row = table.rows[i+1]; // table.rows[0] is the header
+		var verb = listOfVerbs[listIdxVerbs[i]];
+		var error = 0;
+		for (var j = 0, col; col = row.cells[j]; j++) {
+			var cell = col.firstChild;
+			if (cell.nodeName == 'INPUT') {
+				if (cell.value == "" && j != verb.length -1) {
+					error++;
+					continue;
+				}
+
+				// we don't care for the kanjis column; just write the answer
+				if (j == verb.length - 1) {
+					cell.value = verb[j];
+				} else {
+					var str = cell.value.trim();
+					if (j == 0 && str.startsWith("to ")) {		//this is the meaning
+						str = str.substring(3);
+					} else if (j > 1 && wanakana.isHiragana(str)) { // this is another column
+						str = wanakana.toRomaji(str);
+					}
+
+					if (str !== verb[j]) {
+						error++;
+						cell.style.color = 'red';
+					} else {
+						cell.style.color = 'green';
+					}
+				}
+			}
+		}
+		if (error == 0) {
+			score++;
+		}
+	}
+	
+	//display a score
+	var perc = score * 100. / nVerbs;
+	var color;
+	if (perc < 50) {
+		color = 'red';
+	} else if (perc < 90) {
+		color = 'blue';
+	} else {
+		color = 'green';
+	} 
+	document.getElementById('quizscore').innerHTML = "Score: " + score + "/" + nVerbs;
+	document.getElementById('quizscore').style.color = color;
+  
 }
 
 function initScript() {
